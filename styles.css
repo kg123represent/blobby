@@ -1,30 +1,51 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Dosis', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Sedgwick Ave', cursive;
-font-family: 'Abel', sans-serif; */
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
+main {
+    display : flex;
+    flex-flow: wrap;
 }
 
-h2 {
-  font-family: 'Dosis', sans-serif;
+section {
+    min-width: 200px;
+    min-height: 200px;
 }
 
-p {
-  font-family: 'Dosis', sans-serif;
+#block1 {
+    flex-basis : 100%;
 }
 
-body {
-  margin-top: 100px;
-  margin-left: 75px;
-  margin-right: 75px;
+#block2, #block3, #block4, #block5 {
+    flex-basis : 50%;
 }
 
-h3 {
-  font-family: 'Dosis', sans-serif;
-  margin-top: -15px;
+
+
+@media (max-width : 800px)
+{
+    #block1{
+        flex-basis : 100%;
+    }
+    #block2, #block3, #block4, #block5{
+        flex-basis : 50%;
+    }
+}
+
+@media (max-width : 600px)
+{
+    #block1,#block2,#block3,#block4,#block5
+    {
+        flex-basis : 100%;
+    }
+}
+
+section.innersection {
+  margin: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px 3px #d1d1d1);
+  border-radius: 5px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+section.innersection:hover {
+  box-shadow: 1px 2px 2px 1px #d1d1d1;
+
 }
