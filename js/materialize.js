@@ -10019,3 +10019,7 @@ if (Vel) {
     $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tap-target');
   };
 })(jQuery);
+
+ $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
