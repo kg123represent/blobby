@@ -1,5 +1,5 @@
 /*preloader js*/
-var delayTime = 2000; //in milliseconds
+var delayTime = 500; //in milliseconds
 $(".preloader").show(); 
 
 $(window).on('load', function () {
