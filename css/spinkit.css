@@ -694,11 +694,25 @@
       </div>
  *
  */
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    background-color: darkseagreen;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    
+}
+
 .sk-folding-cube {
   margin: 40px auto;
   width: 40px;
   height: 40px;
-  position: relative;
+  top: 50%;
+  left: 50%;
+    
+  position: fixed;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg); }
   .sk-folding-cube .sk-cube {
